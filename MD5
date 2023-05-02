@@ -1,4 +1,4 @@
-70f51ea2cfa72caa8e0a1b699f971ba3 *DESCRIPTION
+117a9ec316a51d3543c50963c1353bd1 *DESCRIPTION
 9daeb62344384d741ea9e5a6a938abb5 *LICENSE
 69e6f2bdf00856fc6de8b700582de76a *NAMESPACE
 0c72341bae4f1e9930615899292fd5e6 *NEWS.md
@@ -19,7 +19,7 @@ a00aa44d2cc26bf2fd1f3de410fc6501 *man/filter_fails.Rd
 e7f3918d0319abe4e638f8f7bf344c6a *man/ruleset.Rd
 68a6bd8e3833a32ce8dc8e7c778cc764 *man/write_rules.Rd
 2aeffcc15dd58313b358da012d5c9746 *tests/testthat.R
-e96ddc734a250ed9db67ff674d48a799 *tests/testthat/test-check_data.R
+1e05ec4abe9f73178e3b18f099eeed57 *tests/testthat/test-check_data.R
 79652a62c0aa19746dd6ed80868e0103 *tests/testthat/test-filters.R
 b2c489d7e9cb00404d7613f5d787901f *tests/testthat/test-im-export.R
 093c13fc26562c2169e7c6a68185abc8 *tests/testthat/test-rule.R
