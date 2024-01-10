@@ -4,7 +4,14 @@
 \alias{check_data}
 \title{Checks if a dataset confirms to a given set of rules}
 \usage{
-check_data(x, rules, fail_on_warn = FALSE, fail_on_error = FALSE)
+check_data(
+  x,
+  rules,
+  xname = deparse(substitute(x)),
+  stop_on_fail = FALSE,
+  stop_on_warn = FALSE,
+  stop_on_error = FALSE
+)
 }
 \arguments{
 \item{x}{a dataset, either a \code{\link{data.frame}}, \code{\link[dplyr:reexports]{dplyr::tibble}}, \code{\link[data.table:data.table]{data.table::data.table}},
@@ -12,9 +19,13 @@ check_data(x, rules, fail_on_warn = FALSE, fail_on_error = FALSE)
 
 \item{rules}{a list of \code{\link{rule}}s}
 
-\item{fail_on_warn}{if the function should throw an error on a warning}
+\item{xname}{optional, a name for the x variable (only used for errors)}
 
-\item{fail_on_error}{if the function should throw an error on a failed rule}
+\item{stop_on_fail}{when any of the rules fail, throw an error with stop}
+
+\item{stop_on_warn}{when a warning is found in the code execution, throw an error with stop}
+
+\item{stop_on_error}{when an error is found in the code execution, throw an error with stop}
 }
 \value{
 a data.frame-like object with one row for each rule and its results
@@ -31,4 +42,7 @@ rs <- ruleset(
 rs
 
 check_data(mtcars, rs)
+}
+\seealso{
+\code{\link[=detect_backend]{detect_backend()}}
 }
